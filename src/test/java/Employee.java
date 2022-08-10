@@ -28,12 +28,12 @@ public class Employee {
         }
     }
 
-    public static String sumOfAllEmpSalary(Company company) {
+    public static void sumOfAllEmpSalary(Company company) {
         ArrayList<Employee> cmp = company.getEmployees();
         double totalSalaryOfAllEmployees = 0;
         for (Employee emp : cmp) {
             totalSalaryOfAllEmployees += emp.getSalary();
         }
-        return System.out.printf("Total salary of all employees: %.2f", totalSalaryOfAllEmployees).toString();
+        System.out.printf("Total salary of all employees: %.2f", totalSalaryOfAllEmployees);
     }
 }
