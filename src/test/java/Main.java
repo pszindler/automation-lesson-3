@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         boolean endProgram = false;
         Company company = generateCompany();
-        generateEmployeesAndAddToCompanyList(1, company);
+        generateEmployeesAndAddToCompanyList(5, company);
         programLogic(endProgram, company);
     }
 
