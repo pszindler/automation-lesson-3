@@ -22,14 +22,26 @@ public class Main {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter first name");
         String name = scn.nextLine();
+        while (EmployeeValidationHelper.isValidName(name)) {
+            System.out.println("Please insert a real name.");
+            name = scn.nextLine();
+        }
         System.out.println("Enter surname");
         String surname = scn.nextLine();
+        while (EmployeeValidationHelper.isValidName(surname)) {
+            System.out.println("Please insert a real surname.");
+            surname = scn.nextLine();
+        }
         System.out.println("Enter salary");
-        double salary = scn.nextDouble();
-        return new Employee(name, surname, salary);
+        String salary = scn.nextLine();
+        while (!EmployeeValidationHelper.isValidSalary(salary)) {
+            System.out.println("Please insert a real salary.");
+            salary = scn.nextLine();
+        }
+        return new Employee(name, surname, Double.parseDouble(salary));
     }
 
-    private static boolean userMenu(int menuOption, Company company, boolean endProgram) {
+    private static boolean userMenu(int menuOption, Company company) {
         switch (menuOption) {
             case 1 -> Employee.sumOfAllEmpSalary(company);
             case 2 -> Employee.printAllEmployees(company);
@@ -45,17 +57,16 @@ public class Main {
     private static void programLogic(boolean endProgram, Company company) {
         while (!endProgram) {
             System.out.println("""
-                                        
-                    --------------------------------------                 
-                    1 – Print sum of all employees salary |
-                                                          | 
-                    2 – Display all employees data        |
-                                                          |  
-                    3 – Add new employee                  |          
-                                                          |
+                           
+                    1 – Print sum of all employees salary
+                                                          
+                    2 – Display all employees data
+                                                            
+                    3 – Add new employee
+                                                          
                     4 – End program""");
             int menuOption = checkForCorrectMenuOption();
-            endProgram = userMenu(menuOption, company, endProgram);
+            endProgram = userMenu(menuOption, company);
         }
         System.out.println("Bye bye!");
     }
