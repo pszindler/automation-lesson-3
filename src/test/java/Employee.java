@@ -30,10 +30,7 @@ public class Employee {
 
     public static void sumOfAllEmpSalary(Company company) {
         ArrayList<Employee> cmp = company.getEmployees();
-        double totalSalaryOfAllEmployees = 0.0;
-        for (Employee emp : cmp) {
-            totalSalaryOfAllEmployees += emp.getSalary();
-        }
+        double totalSalaryOfAllEmployees = cmp.stream().mapToDouble(Employee::getSalary).sum();
         System.out.printf("Total salary of all employees: %.2f\n", totalSalaryOfAllEmployees);
     }
 }
