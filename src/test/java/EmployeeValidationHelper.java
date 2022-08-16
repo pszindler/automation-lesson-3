@@ -22,6 +22,6 @@ public class EmployeeValidationHelper {
 
         Matcher m = p.matcher(salary);
 
-        return m.matches();
+        return !m.matches();
     }
 }

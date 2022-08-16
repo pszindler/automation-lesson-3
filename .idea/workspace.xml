@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a870932f-38e0-4e35-aeb8-b16215167135" name="Changes" comment="validation added, and code refactor in main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

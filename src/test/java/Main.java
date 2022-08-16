@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         boolean endProgram = false;
         Company company = generateCompany();
-        generateEmployeesAndAddToCompanyList(2, company);
+        generateEmployeesAndAddToCompanyList(5, company);
         programLogic(endProgram, company);
     }
 
@@ -34,7 +34,7 @@ public class Main {
         }
         System.out.println("Enter salary");
         String salary = scn.nextLine();
-        while (!EmployeeValidationHelper.isValidSalary(salary)) {
+        while (EmployeeValidationHelper.isValidSalary(salary)) {
             System.out.println("Please insert a real salary.");
             salary = scn.nextLine();
         }
