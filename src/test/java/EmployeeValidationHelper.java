@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 public class EmployeeValidationHelper {
 
     public static boolean isValidName(String name) {
-        String regex = "^[A-Za-z]\\w{2,29}$";
+        String regex = "(?=.{2,30}$)\\p{Lu}\\p{L}+(?:\\s\\p{Lu}\\p{L}+)*";
         Pattern p = Pattern.compile(regex);
 
         if (name == null) {
