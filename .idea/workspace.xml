@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a870932f-38e0-4e35-aeb8-b16215167135" name="Changes" comment="code refactor">
+    <list default="true" id="a870932f-38e0-4e35-aeb8-b16215167135" name="Changes" comment="name regex validation update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeValidationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeValidationHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660639903955</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="name regex validation update">
+      <created>1660643494859</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660643494859</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +118,7 @@
     <MESSAGE value="refactor method &quot;sumOfAllEmpSalary&quot;" />
     <MESSAGE value="validation added, and code refactor in main" />
     <MESSAGE value="code refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactor" />
+    <MESSAGE value="name regex validation update" />
+    <option name="LAST_COMMIT_MESSAGE" value="name regex validation update" />
   </component>
 </project>
